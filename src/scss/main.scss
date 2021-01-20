@@ -1,0 +1,114 @@
+.blogseo{
+    &_metalink{
+        color: #4d5156;
+    }
+    &_metatitle{
+        color: #1a0dab;
+        font-size: 20px;
+        margin-top: -16px;
+    }
+    &_metadesc{
+        color: #4d5156;
+    line-height: 1.58;
+    margin-top: -13px;
+    }
+}
+
+.blog{
+        
+    &_mbg1{
+        padding: 2rem;
+        background-color: aliceblue;
+    }
+}
+
+// tr.odd {
+//     display: none;
+// }
+
+
+
+.rcicons {
+    padding: 0px 9px 4px 9px;
+    /* background-color: #007bff; */
+    color: white;
+    border-radius: 5px;
+    background: radial-gradient(at 124% 6%, #1967a9, #0a1832) fixed;
+}
+
+.nestable-item-name {
+    background-color: antiquewhite;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.cursor-pointer {cursor: pointer;}
+
+.my{
+    &_cs1{
+        font-size: 15px;
+        background-color: aliceblue;
+        padding: 8px;
+    }
+
+
+    &_width200{
+        width: 200px;
+    }
+    &_width100{
+        width: 100px;
+    }
+    &_width150{
+        width: 150px;
+    }
+
+
+    &_br0{
+        border-radius: 0px;
+    }
+
+
+    &_d1{
+        height: 360px;
+        overflow: scroll;
+        display: grid;
+    }
+
+    &_d2{
+        background-color: aliceblue;
+    /* margin: 20px !important; */
+    /* width: 100% !important; */
+    display: block;
+    margin: 9px 0px;
+    padding: 12px;
+    }
+
+
+}
+
+@media (max-width: 1024px)
+{
+    .enlarged .side-menu.left {
+    margin-left: 0 !important;
+    background: radial-gradient(at 50% -20%, #1967a9, #0a1832);
+}
+}
+
+
+.card-header {
+    background: radial-gradient(at 50% -20%, #1967a9, #0a1832) fixed;
+    border: 1px solid white;
+}
+thead {
+    background: radial-gradient(at 50% -20%, #1967a9, #0a1832) fixed;
+    color: white;
+}
+td.dataTables_empty {
+    display: none;
+}
+.page-item.active .page-link {
+    /* background-color: #2f8ee0; */
+    border-color: #2f8ee0;
+    background: radial-gradient(at 124% 6%, #1967a9, #0a1832) fixed;
+}
