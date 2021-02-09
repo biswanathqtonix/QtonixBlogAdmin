@@ -27,7 +27,8 @@ export class BlogEdit extends Component {
             tempimage:'',
             content:'',
             metatitle:'',
-            metadescription:''
+            metadescription:'',
+            metakey:''
         }
         this.validator = new SimpleReactValidator();
         this.onEditorChange=this.onEditorChange.bind(this);
@@ -52,8 +53,11 @@ export class BlogEdit extends Component {
                 content:response.data.data.content,
                 metatitle:response.data.data.metatitle,
                 metadescription:response.data.data.metadescription,
+                metakey:response.data.data.metakey,
+
+                
             })
-        console.log(this.state);
+        // console.log(this.state);
 
         })
     }
@@ -95,7 +99,9 @@ export class BlogEdit extends Component {
             formData.append('content',this.state.content);
             formData.append('metatitle',this.state.metatitle);
             formData.append('metadescription',this.state.metadescription);
+            formData.append('metakey',this.state.metakey);
 
+            
             const config = {
                 headers: {'content-type':'multipart/formdata'}
             }
@@ -217,8 +223,14 @@ export class BlogEdit extends Component {
                                             </div>
                                             <div className="form-group">
                                                 <label>Meta Description</label>
-                                                <textarea className="form-control" rows="3" maxLength={11} name="metadescription" value={this.state.metadescription} onChange={this.handleTextChange}></textarea>
+                                                <textarea className="form-control" rows="3" maxLength={200} name="metadescription" value={this.state.metadescription} onChange={this.handleTextChange}></textarea>
                                             </div>  
+                                            <div className="form-group">
+                                                <label>Meta Keyword</label>
+                                                <textarea className="form-control" rows="3" maxLength={200} name="metakey" value={this.state.metakey} onChange={this.handleTextChange}></textarea>
+                                            </div>
+
+                                            
                                             
                                         </div>
                                         <div className="col-md-6">

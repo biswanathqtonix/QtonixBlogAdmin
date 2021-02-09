@@ -25,7 +25,8 @@ export class BlogCreate extends Component {
             tempimage:'',
             content:'',
             metatitle:'',
-            metadescription:''
+            metadescription:'',
+            metakey:''
         }
         this.validator = new SimpleReactValidator();
         this.onEditorChange=this.onEditorChange.bind(this);
@@ -84,6 +85,7 @@ export class BlogCreate extends Component {
             formData.append('content',this.state.content);
             formData.append('metatitle',this.state.metatitle);
             formData.append('metadescription',this.state.metadescription);
+            formData.append('metakey',this.state.metakey);
 
             const config = {
                 headers: {'content-type':'multipart/formdata'}
@@ -222,7 +224,11 @@ export class BlogCreate extends Component {
                                                 <label>Meta Description</label>
                                                 <textarea className="form-control" rows="3" name="metadescription" value={this.state.metadescription} onChange={this.handleTextChange}></textarea>
                                                 <h6 className="text-danger">{this.validator.message('meta descripation', this.state.metadescription, 'required|min:10|max:120')}</h6>
-
+                                            </div>
+                                            <div className="form-group">
+                                                <label>Meta Keyword</label>
+                                                <textarea className="form-control" rows="3" name="metakey" value={this.state.metakey} onChange={this.handleTextChange}></textarea>
+                                                <h6 className="text-danger">{this.validator.message('meta keyword', this.state.metakey, 'required|min:1|max:120')}</h6>
                                             </div>  
                                             
                                         </div>

@@ -17,6 +17,7 @@ export class CreatePage extends Component {
             content:'',
             metatitle:'',
             metadescription:'',
+            metakey:'',
             url:''
         }
         this.validator = new SimpleReactValidator();
@@ -142,6 +143,12 @@ export class CreatePage extends Component {
                                                     <h6 className="text-danger">{this.validator.message('meta descripation', this.state.metadescription, 'required|min:10|max:120')}</h6>
 
                                                 </div>  
+                                                <div className="form-group">
+                                                    <label>Meta Keyword</label>
+                                                    <textarea className="form-control" rows="3" name="metakey" value={this.state.metakey} onChange={this.handleTextChange}></textarea>
+                                                    <h6 className="text-danger">{this.validator.message('meta keyword', this.state.metakey, 'required|min:1|max:120')}</h6>
+
+                                                </div>
                                                 
                                             </div>
                                             <div className="col-md-6">

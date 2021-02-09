@@ -113,7 +113,7 @@ export class Home extends Component {
 
 
             <div className="row">
-                <div className="col-xl-8">
+                {/* <div className="col-xl-8">
                     <div className="card m-b-30">
                     <div className="card-body">
                         <h4 className="mt-0 m-b-30 header-title">Latest Transactions</h4>
@@ -215,8 +215,8 @@ export class Home extends Component {
                         </div>
                     </div>
                     </div>
-                </div>
-                <div className="col-xl-4">
+                </div> */}
+                {/* <div className="col-xl-4">
                     <div className="card m-b-30">
                     <div className="card-body">
                         <h4 className="mt-0 m-b-15 header-title">Recent Activity Feed</h4>
@@ -253,7 +253,7 @@ export class Home extends Component {
                         </ol>
                     </div>
                     </div>
-                </div>
+                </div> */}
                 </div>
 
 
