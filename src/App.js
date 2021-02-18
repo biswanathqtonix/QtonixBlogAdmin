@@ -35,6 +35,8 @@ import CreatePage from './pages/webpage/CreatePage'
 import ViewPage from './pages/webpage/ViewPage'
 import EditPage from './pages/webpage/EditPage'
 
+import RequestsAll from './pages/requests/RequestsAll'
+
 import Menu from './pages/menu/Menu'
 
 import NestableItem from './pages/NestableItem'
@@ -70,9 +72,11 @@ function App() {
           {/* LOGIN DETAILS */}
           <ProtectedRouteUser exact path="/logindetails" component={LogindetailsAll} />
           <ProtectedRouteUser exact path="/logindetails/:id" component={LogindetailsView} />
-
-
           {/* LOGIN DETAILS */}
+
+
+          <ProtectedRouteUser exact path="/requests" component={RequestsAll} />
+
           
 
 

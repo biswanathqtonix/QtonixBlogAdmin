@@ -4,6 +4,7 @@ import blogcategoryReducer from './blogcategoryReducer'
 import blogReducer from './blogReducer'
 import pageReducer from './pageReducer'
 import logindetailsReducer from './logindetailsReducer'
+import requestReducer from './RequestReducer'
 
 const songReducer = () => {
     return[
@@ -22,4 +23,5 @@ export default combineReducers({
     blogs:blogReducer,
     pages:pageReducer,
     logindetails:logindetailsReducer,
+    requests:requestReducer
 })

@@ -53,6 +53,9 @@ export default class Sidebar extends Component {
               <Link exact to="/" className="waves-effect"><i className="dripicons-device-desktop" /><span> Dashboard </span></Link>
             </li>
             <li>
+              <Link exact to="/requests" className="waves-effect"><i className="dripicons-direction" /><span> Requests </span></Link>
+            </li>
+            <li>
               <Link exact to="/menu" className="waves-effect"><i className="dripicons-network-3" /><span> Menu </span></Link>
             </li>
             <li>

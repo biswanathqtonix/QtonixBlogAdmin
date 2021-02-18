@@ -36,3 +36,9 @@ export const loginDetails = () => async dispatch => {
     const response = await API.get('/user/logindetails')
     dispatch({type:'ALL_LOGIN_DETAILS',payload:response.data})
 }
+
+//FETCH ALL REQUESTS
+export const getRequestFromUser  = () => async dispatch => {
+    const response = await API.get('/googlenotification')
+    dispatch({type:'FETCH_REQUEST_FROM_WEBSITE',payload:response.data.data})
+}
